@@ -96,7 +96,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      5 min read
     
 </span></p>
 
@@ -201,14 +201,12 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Cloning into &#39;fastlinkcheck&#39;...
-remote: Enumerating objects: 135, done.
-remote: Counting objects: 100% (135/135), done.
-remote: Compressing objects: 100% (98/98), done.
-remote: Total 608 (delta 69), reused 76 (delta 34), pack-reused 473
-Receiving objects: 100% (608/608), 1.12 MiB | 10.47 MiB/s, done.
-Resolving deltas: 100% (302/302), done.
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-cyan-fg">  File </span><span class="ansi-green-fg">&#34;&lt;ipython-input-1-fdb0584cc2b5&gt;&#34;</span><span class="ansi-cyan-fg">, line </span><span class="ansi-green-fg">1</span>
+<span class="ansi-red-fg">    git clone https://github.com/fastai/fastlinkcheck.git</span>
+        ^
+<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
 </pre>
 </div>
 </div>
@@ -260,35 +258,6 @@ Resolving deltas: 100% (302/302), done.
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>usage: link_check [-h] [--host HOST] [--config_file CONFIG_FILE] [--pdb]
-                  [--xtra XTRA]
-                  path
-
-Check for broken links recursively in `path`.
-
-positional arguments:
-  path                  Root directory searched recursively for HTML files
-
-optional arguments:
-  -h, --help            show this help message and exit
-  --host HOST           Host and path (without protocol) of web server
-  --config_file CONFIG_FILE
-                        Location of file with urls to ignore
-  --pdb                 Run in pdb debugger (default: False)
-  --xtra XTRA           Parse for additional args (default: &#39;&#39;)
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -310,36 +279,6 @@ optional arguments:
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>                                                 
-ERROR: The Following Broken Links or Paths were found:
-
-- &#39;http://fastlinkcheck.com/test.html&#39; was found in the following pages:
-  - `/Users/hamelsmu/github/fastlinkcheck/_example/broken_links/test.html`
-
-- &#39;http://somecdn.com/doesntexist.html&#39; was found in the following pages:
-  - `/Users/hamelsmu/github/fastlinkcheck/_example/broken_links/test.html`
-
-- Path(&#39;/Users/hamelsmu/github/fastlinkcheck/_example/broken_links/test.js&#39;) was found in the following pages:
-  - `/Users/hamelsmu/github/fastlinkcheck/_example/broken_links/test.html`</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre></pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -365,33 +304,6 @@ ERROR: The Following Broken Links or Paths were found:
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>                                                 
-ERROR: The Following Broken Links or Paths were found:
-
-- &#39;http://somecdn.com/doesntexist.html&#39; was found in the following pages:
-  - `/Users/hamelsmu/github/fastlinkcheck/_example/broken_links/test.html`
-
-- Path(&#39;/Users/hamelsmu/github/fastlinkcheck/_example/broken_links/test.js&#39;) was found in the following pages:
-  - `/Users/hamelsmu/github/fastlinkcheck/_example/broken_links/test.html`</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre></pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -424,25 +336,13 @@ ERROR: The Following Broken Links or Paths were found:
 
 <div class="output_area">
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>                                                 
-ERROR: The Following Broken Links or Paths were found:
-
-- &#39;http://fastlinkcheck.com/test.html&#39; was found in the following pages:
-  - `/Users/hamelsmu/github/fastlinkcheck/_example/broken_links/test.html`
-
-- &#39;http://somecdn.com/doesntexist.html&#39; was found in the following pages:
-  - `/Users/hamelsmu/github/fastlinkcheck/_example/broken_links/test.html`
-
-- Path(&#39;/Users/hamelsmu/github/fastlinkcheck/_example/broken_links/test.js&#39;) was found in the following pages:
-  - `/Users/hamelsmu/github/fastlinkcheck/_example/broken_links/test.html`</pre>
-</div>
-</div>
-
-<div class="output_area">
-
 <div class="output_subarea output_text output_error">
-<pre></pre>
+<pre>
+<span class="ansi-cyan-fg">  File </span><span class="ansi-green-fg">&#34;&lt;ipython-input-2-c2a9e65a02aa&gt;&#34;</span><span class="ansi-cyan-fg">, line </span><span class="ansi-green-fg">1</span>
+<span class="ansi-red-fg">    link_check _example/broken_links --host fastlinkcheck.com/mysite</span>
+               ^
+<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
+</pre>
 </div>
 </div>
 
@@ -470,21 +370,6 @@ ERROR: The Following Broken Links or Paths were found:
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>test.js
-https://www.google.com
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -517,19 +402,13 @@ https://www.google.com
 
 <div class="output_area">
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>                                                 
-ERROR: The Following Broken Links or Paths were found:
-
-- &#39;http://somecdn.com/doesntexist.html&#39; was found in the following pages:
-  - `/Users/hamelsmu/github/fastlinkcheck/_example/broken_links/test.html`</pre>
-</div>
-</div>
-
-<div class="output_area">
-
 <div class="output_subarea output_text output_error">
-<pre></pre>
+<pre>
+<span class="ansi-cyan-fg">  File </span><span class="ansi-green-fg">&#34;&lt;ipython-input-3-f6688a56e6b4&gt;&#34;</span><span class="ansi-cyan-fg">, line </span><span class="ansi-green-fg">1</span>
+<span class="ansi-red-fg">    link_check _example/broken_links --host fastlinkcheck.com --config_file _example/broken_links/linkcheck.rc</span>
+               ^
+<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
+</pre>
 </div>
 </div>
 
@@ -557,20 +436,6 @@ ERROR: The Following Broken Links or Paths were found:
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>No broken links found!
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
